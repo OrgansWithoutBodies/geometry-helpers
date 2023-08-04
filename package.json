@@ -3,10 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsc",
+    "build:vite": "tsc && vite build",
+    "build:watch": "tsc && vite build --watch",
+    "preview": "vite preview",
+    "reloadTypes": "rm -rf node_modules/ && yarn"
   },
   "devDependencies": {
     "type-library": "file:../type-library/",
