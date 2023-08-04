@@ -52,7 +52,8 @@ type SliceID = BrandedNumber<"Slice">;
 // TODO tooltip library
 
 // TODO represent non-adj mats as well (no assumption of symmetry)
-export interface IAdjacencyMatrix<TCell, TNodeOrder extends NodeID[]> {
+// export interface IAdjacencyMatrix<TCell, TNodeOrder extends NodeID[]> {
+export interface IAdjacencyMatrix<TCell> {
   numCells: number;
   //   TODO tie TCell to CellID
   cells: AdjacencyMatrix<TCell>;
